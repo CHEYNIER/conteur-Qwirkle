@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://TON_PSEUDO_GITHUB.github.io/TON_REPO/sitemap.xml
+Sitemap: https://cheynier.github.io/conteur-Qwirkle/sitemap.xml
