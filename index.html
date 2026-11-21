@@ -3,51 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Qwirkle Scorekeeper Pro — Compteur de Points & Score Gratuit</title>
-  <meta name="description" content="Compteur de points Qwirkle gratuit, rapide et moderne sur mobile et PC : suivi des manches, Qwirkle, bonus de fin de partie, historique et classement en direct.">
-  <meta name="keywords" content="compteur qwirkle, score qwirkle, compter points qwirkle, application qwirkle gratuite, tableau score qwirkle, regles points qwirkle">
-  <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#020617">
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Qwirkle Scorekeeper Pro">
-  <meta property="og:title" content="Qwirkle Scorekeeper Pro — Compteur de Points & Score Gratuit">
-  <meta property="og:description" content="Compteur de points Qwirkle gratuit, rapide et moderne sur mobile et PC : suivi des manches, Qwirkle, bonus de fin de partie, historique et classement en direct.">
-  <meta property="og:url" content="https://TON_PSEUDO_GITHUB.github.io/TON_REPO/">
-
-  <!-- Canonical -->
-  <link rel="canonical" href="https://TON_PSEUDO_GITHUB.github.io/TON_REPO/">
-
-  <!-- Structured Data (WebApplication) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "Qwirkle Scorekeeper Pro",
-    "applicationCategory": "GameApplication",
-    "operatingSystem": "Any",
-    "browserRequirements": "Requires JavaScript. Works on mobile and desktop.",
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "EUR"
-    },
-    "description": "Compteur de points Qwirkle gratuit, rapide et moderne sur mobile et PC : suivi des manches, Qwirkle, bonus de fin de partie, historique et classement en direct.",
-    "url": "https://TON_PSEUDO_GITHUB.github.io/TON_REPO/",
-    "inLanguage": "fr"
-  }
-  </script>
-
-  <!-- Central SEO Config Loader -->
-  <script type="module">
-    import { applySeoConfig } from './seo.js';
-    applySeoConfig();
-  </script>
-
+  <title>Qwirkle Scorekeeper - Compteur de Points</title>
+  <script type="module" src="./seo.js"></script>
+  
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-
+  
   <!-- FontAwesome & Google Fonts -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -83,34 +44,34 @@
     }
   </script>
 
-  <style>
-    ::-webkit-scrollbar { width: 6px; height: 6px; }
-    ::-webkit-scrollbar-track { background: rgba(15, 23, 42, 0.6); }
-    ::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.2); border-radius: 9999px; }
-    ::-webkit-scrollbar-thumb:hover { background: rgba(255, 255, 255, 0.4); }
+    <style>
+      ::-webkit-scrollbar { width: 6px; height: 6px; }
+      ::-webkit-scrollbar-track { background: rgba(15, 23, 42, 0.6); }
+      ::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.2); border-radius: 9999px; }
+      ::-webkit-scrollbar-thumb:hover { background: rgba(255, 255, 255, 0.4); }
 
-    .glass-panel {
-      background: rgba(30, 41, 59, 0.7);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-    }
-    .glass-card {
-      background: rgba(255, 255, 255, 0.05);
-      backdrop-filter: blur(8px);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-    }
-    .qwirkle-pattern {
-      background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-      background-size: 24px 24px;
-    }
-  </style>
+      .glass-panel {
+        background: rgba(30, 41, 59, 0.7);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      .glass-card {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(8px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+      .qwirkle-pattern {
+        background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+        background-size: 24px 24px;
+      }
+    </style>
 </head>
 
 <body class="h-full bg-slate-950 text-slate-100 font-sans selection:bg-qblue selection:text-white antialiased overflow-x-hidden qwirkle-pattern relative">
 
   <div id="app" class="min-h-full flex flex-col relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6">
-
+    
     <!-- Header -->
     <header class="flex items-center justify-between py-3 px-5 glass-panel rounded-2xl mb-6 shadow-fluent">
       <div class="flex items-center space-x-3">
@@ -124,7 +85,7 @@
           <h1 class="font-display font-extrabold text-xl tracking-tight text-white">
             Qwirkle <span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-qblue/20 text-qblue border border-qblue/30 ml-1">PRO</span>
           </h1>
-          <p class="text-[11px] text-slate-400 font-medium">Compteur de Points & Tableau de Score</p>
+          <p class="text-[11px] text-slate-400 font-medium">Compteur & Tableau de Score</p>
         </div>
       </div>
 
@@ -146,12 +107,12 @@
       <section id="setupScreen" class="w-full max-w-2xl mx-auto my-auto space-y-6">
         <div class="glass-panel p-6 sm:p-8 rounded-3xl shadow-fluent space-y-6">
           <div class="text-center space-y-2">
-            <h2 class="font-display font-bold text-2xl sm:text-3xl text-white">Compteur de Score Qwirkle</h2>
-            <p class="text-slate-400 text-sm">Ajoutez les joueurs pour commencer une partie gratuite et suivre les points en direct.</p>
+            <h2 class="font-display font-bold text-2xl sm:text-3xl text-white">Préparation de la Partie</h2>
+            <p class="text-slate-400 text-sm">Ajoutez les joueurs pour commencer.</p>
           </div>
 
           <div class="flex flex-col sm:flex-row gap-3">
-            <input type="text" id="playerNameInput" maxlength="15" placeholder="Nom du joueur..."
+            <input type="text" id="playerNameInput" maxlength="15" placeholder="Nom du joueur..." 
               class="w-full bg-slate-900/80 border border-slate-700 focus:border-qblue rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 outline-none transition"
               onkeypress="if(event.key==='Enter') addPlayer()">
 
@@ -170,12 +131,14 @@
             </div>
             <div id="setupPlayersList" class="space-y-2 max-h-48 overflow-y-auto pr-1"></div>
 
+            <!-- Saved Players Presets Section -->
             <div id="savedPlayersSection" class="pt-3 border-t border-slate-800/80 hidden">
               <span class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider block mb-2">Joueurs fréquents (Clic pour ajouter)</span>
               <div id="savedPlayersChips" class="flex flex-wrap gap-1.5"></div>
             </div>
           </div>
 
+          <!-- Action Buttons -->
           <div class="pt-4 border-t border-slate-800 flex flex-col sm:flex-row gap-3">
             <button onclick="shufflePlayers()" class="flex-1 py-3 px-4 glass-card hover:bg-white/10 text-slate-300 font-semibold rounded-xl text-sm transition flex items-center justify-center gap-2">
               <i class="fas fa-shuffle text-qyellow"></i>
@@ -187,18 +150,974 @@
             </button>
           </div>
         </div>
-
-        <!-- Bloc infos / aide à la indexation & joueurs -->
-        <div class="glass-card p-4 sm:p-5 rounded-2xl text-xs text-slate-400 space-y-1.5">
-          <p class="font-semibold text-slate-200">Rappel rapide — Compter ses points au Qwirkle</p>
-          <p>Chaque tuile posée rapporte 1 point par tuile dans la ligne ou colonne formée (ou croisée). Un <strong class="text-slate-200">Qwirkle</strong> (ligne complète de 6 tuiles) marque 12 points minimum, et la fin de partie accorde un bonus de +6 points.</p>
-        </div>
       </section>
 
       <!-- SCREEN 2: GAME DASHBOARD -->
       <section id="gameScreen" class="hidden grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
-
+        
         <!-- Left: Leaderboard & History -->
         <div class="lg:col-span-5 space-y-6">
           <div class="glass-panel p-5 sm:p-6 rounded-3xl shadow-fluent space-y-4">
-            <div class="flex items-center justify
+            <div class="flex items-center justify-between border-b border-slate-800 pb-3 flex-wrap gap-2">
+              <h3 id="leaderboardTitle" class="font-display font-bold text-lg text-white flex items-center gap-2">
+                <i class="fas fa-trophy text-qyellow"></i> Classement
+              </h3>
+              <div class="flex items-center gap-2">
+                <button onclick="toggleLeaderboardSort()" class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300 hover:text-white transition flex items-center gap-1.5 border border-slate-700">
+                  <i class="fas fa-sort text-qblue" id="sortIcon"></i>
+                  <span id="sortLabel">Podium</span>
+                </button>
+                <span id="turnCounter" class="text-xs font-semibold px-2.5 py-1 rounded-full bg-slate-800 text-slate-300 border border-slate-700">Tour 1</span>
+              </div>
+            </div>
+            <div id="leaderboardList" class="space-y-2.5"></div>
+          </div>
+
+          <div class="glass-panel p-5 sm:p-6 rounded-3xl shadow-fluent space-y-4">
+            <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+              <h3 class="font-display font-bold text-base text-white flex items-center gap-2">
+                <i class="fas fa-clock-rotate-left text-qblue"></i> Historique
+              </h3>
+              <div class="flex items-center gap-2">
+                <button onclick="openHistoryModal()" class="px-2 py-1 rounded-lg text-xs font-medium bg-slate-800 text-slate-300 hover:text-white transition flex items-center gap-1" title="Voir les anciennes parties">
+                  <i class="fas fa-box-archive text-xs"></i> <span>Archives</span>
+                </button>
+                <button onclick="undoLastTurn()" id="btnUndo" disabled class="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-800 text-slate-400 hover:text-white disabled:opacity-30 disabled:cursor-not-allowed transition flex items-center gap-1.5">
+                  <i class="fas fa-undo"></i> Annuler
+                </button>
+              </div>
+            </div>
+            <div id="historyLogs" class="space-y-2 max-h-56 overflow-y-auto pr-1"></div>
+          </div>
+        </div>
+
+        <!-- Right: Calculator -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="glass-panel p-6 sm:p-8 rounded-3xl shadow-fluent space-y-6 border border-qblue/20 relative">
+            
+            <div class="flex items-center justify-between p-4 rounded-2xl bg-slate-900/80 border border-slate-800 shadow-inner">
+              <div class="flex items-center space-x-3.5">
+                <div id="activePlayerBadge" class="w-12 h-12 rounded-xl flex items-center justify-center font-bold text-xl text-white shadow-md"></div>
+                <div>
+                  <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">Au tour de</span>
+                  <h4 id="activePlayerName" class="font-display font-extrabold text-xl text-white">-</h4>
+                </div>
+              </div>
+              <div class="text-right">
+                <span class="text-xs font-medium text-slate-400">Score Actuel</span>
+                <p id="activePlayerCurrentScore" class="font-display font-bold text-xl text-qblue">0 pts</p>
+              </div>
+            </div>
+
+            <div class="space-y-6">
+              <div class="space-y-3">
+                <label class="text-xs font-bold uppercase tracking-wider text-slate-300">1. Score total du tour (incluant les bonus)</label>
+                <!-- Quick numeric Selector including 12 and 14 -->
+                <div class="grid grid-cols-9 gap-1.5 sm:gap-2">
+                  <button onclick="setBasePoints(0)" class="tile-btn py-2.5 sm:py-3 rounded-xl glass-card font-bold text-xs sm:text-sm hover:bg-slate-700 transition" data-val="0">0</button>
+                  <button onclick="setBasePoints(1)" class="tile-btn py-2.5 sm:py-3 rounded-xl glass-card font-bold text-xs sm:text-sm hover:bg-slate-700 transition" data-val="1">1</button>
+                  <button onclick="setBasePoints(2)" class="tile-btn py-2.5 sm:py-3 rounded-xl glass-card font-bold text-xs sm:text-sm hover:bg-slate-700 transition" data-val="2">2</button>
+                  <button onclick="setBasePoints(3)" class="tile-btn py-2.5 sm:py-3 rounded-xl glass-card font-bold text-xs sm:text-sm hover:bg-slate-700 transition" data-val="3">3</button>
+                  <button onclick="setBasePoints(4)" class="tile-btn py-2.5 sm:py-3 rounded-xl glass-card font-bold text-xs sm:text-sm hover:bg-slate-700 transition" data-val="4">4</button>
+                  <button onclick="setBasePoints(5)" class="tile-btn py-2.5 sm:py-3 rounded-xl glass-card font-bold text-xs sm:text-sm hover:bg-slate-700 transition" data-val="5">5</button>
+                  <button onclick="setBasePoints(6)" class="tile-btn py-2.5 sm:py-3 rounded-xl glass-card font-bold text-xs sm:text-sm hover:bg-slate-700 transition" data-val="6">6</button>
+                  <button onclick="setBasePoints(12)" class="tile-btn py-2.5 sm:py-3 rounded-xl glass-card font-bold text-xs sm:text-sm hover:bg-slate-700 transition" data-val="12">12</button>
+                  <button onclick="setBasePoints(14)" class="tile-btn py-2.5 sm:py-3 rounded-xl glass-card font-bold text-xs sm:text-sm hover:bg-slate-700 transition" data-val="14">14</button>
+                </div>
+
+                <div class="flex items-center gap-4 bg-slate-900/60 p-3 rounded-xl border border-slate-800">
+                  <span class="text-xs font-semibold text-slate-400 w-24">Ajustement :</span>
+                  <input type="range" id="scoreRange" min="0" max="40" value="0" oninput="updateBaseFromSlider(this.value)" class="flex-1 accent-qblue cursor-pointer">
+                  <input type="number" id="customScoreInput" min="0" max="99" value="0" oninput="updateBaseFromInput(this.value)" class="w-16 bg-slate-800 border border-slate-700 rounded-lg text-center font-bold text-sm text-white py-1">
+                </div>
+              </div>
+
+              <div class="space-y-3">
+                <label class="text-xs font-bold uppercase tracking-wider text-slate-300">2. Qwirkle réalisé ce tour ?</label>
+                <div id="qwirkleToggle" onclick="toggleQwirkleBonus()" class="cursor-pointer p-4 rounded-2xl glass-card border border-slate-700 transition flex items-center justify-between group">
+                  <div class="flex items-center space-x-3">
+                    <div id="qwirkleIconBox" class="w-10 h-10 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-slate-500 transition">
+                      <i class="fas fa-star text-lg"></i>
+                    </div>
+                    <div>
+                      <h5 id="qwirkleTitle" class="font-bold text-sm text-slate-400">QWIRKLE</h5>
+                      <p id="qwirkleSubtitle" class="text-xs text-slate-500">Nécessite un score minimum de 6 pts</p>
+                    </div>
+                  </div>
+                  <div id="qwirkleCheck" class="w-7 h-7 rounded-full border-2 border-slate-700 flex items-center justify-center text-transparent transition">
+                    <i class="fas fa-check text-xs"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pt-4 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div class="text-center sm:text-left">
+                  <span class="text-xs text-slate-400 font-semibold uppercase">Total validé</span>
+                  <div class="flex items-baseline space-x-2">
+                    <span id="turnTotalPreview" class="font-display font-extrabold text-3xl sm:text-4xl text-qyellow">0</span>
+                    <span class="text-slate-400 font-medium text-xs">pts</span>
+                  </div>
+                </div>
+                <button onclick="submitTurn()" class="w-full sm:w-auto px-8 py-3.5 bg-gradient-to-r from-qblue to-indigo-600 hover:brightness-110 text-white font-bold rounded-xl text-base shadow-neon transition flex items-center justify-center gap-2">
+                  <span>Valider le Coup</span>
+                  <i class="fas fa-check-circle"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex justify-end">
+            <button onclick="triggerEndGamePrompt()" class="px-4 py-2 rounded-xl text-xs font-semibold bg-amber-500/10 text-amber-400 hover:bg-amber-500/20 border border-amber-500/20 transition flex items-center gap-2">
+              <i class="fas fa-flag-checkered"></i> Terminer la partie (Bonus fin)
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- SCREEN 3: WINNER / PODIUM -->
+      <section id="winnerScreen" class="hidden w-full max-w-4xl mx-auto my-auto space-y-6">
+        <div class="glass-panel p-6 sm:p-10 rounded-3xl shadow-fluent space-y-8 text-center relative overflow-hidden border border-white/20 bg-gradient-to-b from-slate-900/90 via-slate-900/70 to-slate-950/90">
+          
+          <!-- Decorative Glow & Header -->
+          <div class="absolute -top-24 left-1/2 -translate-x-1/2 w-96 h-96 bg-qyellow/10 rounded-full blur-3xl pointer-events-none"></div>
+
+          <div class="space-y-3 relative z-10">
+            <div class="inline-flex items-center justify-center w-20 h-20 rounded-3xl bg-gradient-to-tr from-amber-500/20 to-qyellow/30 border border-amber-500/40 text-amber-400 text-4xl mb-2 shadow-neon animate-bounce">
+              <i class="fas fa-crown"></i>
+            </div>
+            <h2 class="font-display font-extrabold text-3xl sm:text-5xl text-white tracking-tight">Partie Terminée !</h2>
+            <p class="text-slate-300 text-base sm:text-lg"><span id="winnerTitleLabel">Le vainqueur suprême est</span> <span id="winnerName" class="font-bold text-qyellow drop-shadow-[0_0_12px_rgba(255,204,0,0.4)]">-</span> !</p>
+          </div>
+
+          <!-- Centered Podium Container -->
+          <div id="podiumContainer" class="flex flex-wrap justify-center items-end gap-4 sm:gap-6 pt-6 pb-2 relative z-10"></div>
+
+          <!-- Match Statistics Cards -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-left relative z-10 pt-4 border-t border-slate-800/80">
+            <div class="glass-card p-4 sm:p-5 rounded-2xl border border-white/5 space-y-1 bg-slate-900/50 hover:bg-slate-900/80 transition shadow-inner">
+              <span class="text-[11px] text-slate-400 font-bold uppercase tracking-wider flex items-center gap-2"><i class="fas fa-bolt text-qgreen"></i> Meilleur Coup</span>
+              <p id="statBestTurn" class="font-display font-extrabold text-xl text-qgreen">-</p>
+            </div>
+            <div class="glass-card p-4 sm:p-5 rounded-2xl border border-white/5 space-y-1 bg-slate-900/50 hover:bg-slate-900/80 transition shadow-inner">
+              <span class="text-[11px] text-slate-400 font-bold uppercase tracking-wider flex items-center gap-2"><i class="fas fa-star text-qpurple"></i> Total Qwirkles</span>
+              <p id="statTotalQwirkles" class="font-display font-extrabold text-xl text-qpurple">-</p>
+            </div>
+            <div class="glass-card p-4 sm:p-5 rounded-2xl border border-white/5 space-y-1 bg-slate-900/50 hover:bg-slate-900/80 transition shadow-inner">
+              <span class="text-[11px] text-slate-400 font-bold uppercase tracking-wider flex items-center gap-2"><i class="fas fa-chart-line text-qblue"></i> Moyenne / Tour</span>
+              <p id="statAvgTurn" class="font-display font-extrabold text-xl text-qblue">-</p>
+            </div>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="pt-6 flex flex-col sm:flex-row gap-4 justify-center">
+            <button type="button" onclick="restartWithSamePlayers()" class="px-6 py-3.5 bg-qblue hover:bg-blue-600 text-white font-bold rounded-xl text-sm shadow-neon transition flex items-center justify-center gap-2 cursor-pointer z-50">
+              <i class="fas fa-rotate-right"></i> Rejouer avec les mêmes joueurs
+            </button>
+            <button type="button" onclick="resetSetup()" class="px-6 py-3.5 glass-card hover:bg-white/10 text-slate-300 font-semibold rounded-xl text-sm transition flex items-center justify-center gap-2 cursor-pointer z-50">
+              <i class="fas fa-users"></i> Nouveaux joueurs
+            </button>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Modal End Game Bonus -->
+    <div id="endGameModal" class="hidden fixed inset-0 bg-slate-950/80 backdrop-blur-md z-50 flex items-center justify-center p-4">
+      <div class="glass-panel p-6 sm:p-8 rounded-3xl shadow-fluent max-w-md w-full border border-white/10 space-y-6">
+        <div class="text-center space-y-2">
+          <div class="w-12 h-12 rounded-2xl bg-amber-500/20 text-amber-400 border border-amber-500/40 flex items-center justify-center text-xl mx-auto">
+            <i class="fas fa-flag-checkered"></i>
+          </div>
+          <h3 class="font-display font-bold text-xl text-white">Bonus de Fin de Partie</h3>
+          <p class="text-xs text-slate-400">Quel joueur a posé ses dernières tuiles en premier ? (+6 pts)</p>
+        </div>
+        <div id="endGamePlayerSelector" class="space-y-2"></div>
+        <div class="flex gap-3 pt-2">
+          <button onclick="closeEndGameModal()" class="flex-1 py-3 px-4 glass-card hover:bg-white/10 text-slate-300 font-semibold rounded-xl text-xs transition">Annuler</button>
+          <button onclick="confirmEndGameWithBonus()" class="flex-1 py-3 px-4 bg-qblue hover:bg-blue-600 text-white font-bold rounded-xl text-xs shadow-neon transition">Valider</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Reset Confirmation -->
+    <div id="resetConfirmModal" class="hidden fixed inset-0 bg-slate-950/80 backdrop-blur-md z-50 flex items-center justify-center p-4">
+      <div class="glass-panel p-6 sm:p-8 rounded-3xl shadow-fluent max-w-md w-full border border-white/10 space-y-6 text-center">
+        <div class="w-12 h-12 rounded-2xl bg-rose-500/20 text-rose-400 border border-rose-500/40 flex items-center justify-center text-xl mx-auto">
+          <i class="fas fa-triangle-exclamation"></i>
+        </div>
+        <div class="space-y-2">
+          <h3 class="font-display font-bold text-xl text-white">Recommencer une partie ?</h3>
+          <p class="text-xs text-slate-400">La partie en cours sera effacée.</p>
+        </div>
+        <div class="flex gap-3 pt-2">
+          <button onclick="closeResetModal()" class="flex-1 py-3 px-4 glass-card hover:bg-white/10 text-slate-300 font-semibold rounded-xl text-xs transition cursor-pointer">Annuler</button>
+          <button onclick="confirmResetAction()" class="flex-1 py-3 px-4 bg-rose-500 hover:bg-rose-600 text-white font-bold rounded-xl text-xs shadow-lg transition cursor-pointer">Recommencer</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Archived Games / Stats -->
+    <div id="historyModal" class="hidden fixed inset-0 bg-slate-950/80 backdrop-blur-md z-50 flex items-center justify-center p-4">
+      <div class="glass-panel p-6 sm:p-8 rounded-3xl shadow-fluent max-w-lg w-full border border-white/10 space-y-6">
+        <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+          <h3 class="font-display font-bold text-lg text-white flex items-center gap-2">
+            <i class="fas fa-box-archive text-qblue"></i> Archives des Parties
+          </h3>
+          <button onclick="closeHistoryModal()" class="text-slate-400 hover:text-white text-sm"><i class="fas fa-xmark"></i></button>
+        </div>
+        <div id="archivedGamesList" class="space-y-3 max-h-80 overflow-y-auto pr-1"></div>
+        <div class="flex justify-between items-center pt-2 border-t border-slate-800">
+          <button onclick="clearArchives()" class="text-xs text-rose-400 hover:text-rose-300 transition">Effacer les archives</button>
+          <button onclick="closeHistoryModal()" class="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-white text-xs font-semibold rounded-xl transition">Fermer</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Player Personal History -->
+    <div id="playerHistoryModal" class="hidden fixed inset-0 bg-slate-950/80 backdrop-blur-md z-50 flex items-center justify-center p-4">
+      <div class="glass-panel p-6 sm:p-8 rounded-3xl shadow-fluent max-w-md w-full border border-white/10 space-y-6">
+        <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+          <h3 id="playerHistoryModalTitle" class="font-display font-bold text-lg text-white flex items-center gap-2">
+            <i class="fas fa-user text-qblue"></i> Historique du joueur
+          </h3>
+          <button onclick="closePlayerHistoryModal()" class="text-slate-400 hover:text-white text-sm"><i class="fas fa-xmark"></i></button>
+        </div>
+        <div id="playerHistoryList" class="space-y-2.5 max-h-72 overflow-y-auto pr-1"></div>
+        <div class="flex justify-end pt-2 border-t border-slate-800">
+          <button onclick="closePlayerHistoryModal()" class="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-white text-xs font-semibold rounded-xl transition">Fermer</button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="mt-8 py-3 text-center text-xs text-slate-500 font-medium">
+      Qwirkle Scorekeeper Pro &bull; Windows 11 Ready
+    </footer>
+
+  </div>
+
+  <script>
+    const COLOR_PALETTE = [
+      { id: 'qred', hex: '#FF3B30', icon: 'fa-circle' },
+      { id: 'qorange', hex: '#FF9500', icon: 'fa-star' },
+      { id: 'qyellow', hex: '#FFCC00', icon: 'fa-square' },
+      { id: 'qgreen', hex: '#34C759', icon: 'fa-clover' },
+      { id: 'qblue', hex: '#007AFF', icon: 'fa-diamond' },
+      { id: 'qpurple', hex: '#AF52DE', icon: 'fa-certificate' }
+    ];
+
+    let players = [];
+    let history = [];
+    let activePlayerIndex = 0;
+    let selectedColor = COLOR_PALETTE[0];
+    let baseTurnPoints = 0;
+    let isQwirkleBonusActive = false;
+    let audioEnabled = true;
+    let leaderboardSortMode = 'score';
+
+    function toggleLeaderboardSort() {
+      leaderboardSortMode = leaderboardSortMode === 'score' ? 'table' : 'score';
+      updateGameUI();
+      playTone(480, 'sine', 0.1);
+    }
+
+    const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    function playTone(freq, type = 'sine', duration = 0.15) {
+      if (!audioEnabled) return;
+      try {
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.type = type;
+        osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
+        gain.gain.setValueAtTime(0.1, audioCtx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration);
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        osc.start();
+        osc.stop(audioCtx.currentTime + duration);
+      } catch (e) {}
+    }
+
+    function playQwirkleSound() {
+      if (!audioEnabled) return;
+      [300, 400, 500, 600, 750, 900].forEach((freq, idx) => {
+        setTimeout(() => playTone(freq, 'triangle', 0.2), idx * 60);
+      });
+    }
+
+    function toggleAudio() {
+      audioEnabled = !audioEnabled;
+      document.getElementById('soundIcon').className = audioEnabled ? 'fas fa-volume-up text-sm' : 'fas fa-volume-mute text-sm text-rose-400';
+    }
+
+    window.onload = () => {
+      renderColorPicker();
+      loadSavedPlayersPresets();
+      if (players.length === 0) {
+        addPlayerWithName("Alice", COLOR_PALETTE[0]);
+        addPlayerWithName("Bob", COLOR_PALETTE[4]);
+      }
+    };
+
+    function getStoredPlayers() {
+      try {
+        return JSON.parse(localStorage.getItem('qwirkle_saved_players')) || [];
+      } catch(e) { return []; }
+    }
+
+    function savePlayerPreset(name, colorObj) {
+      let saved = getStoredPlayers();
+      if (!saved.some(p => p.name.toLowerCase() === name.toLowerCase())) {
+        saved.push({ name, color: colorObj });
+        localStorage.setItem('qwirkle_saved_players', JSON.stringify(saved));
+        loadSavedPlayersPresets();
+      }
+    }
+
+    function loadSavedPlayersPresets() {
+      const saved = getStoredPlayers();
+      const section = document.getElementById('savedPlayersSection');
+      const container = document.getElementById('savedPlayersChips');
+      if (saved.length === 0) {
+        section.classList.add('hidden');
+        return;
+      }
+      section.classList.remove('hidden');
+      container.innerHTML = saved.map(sp => {
+        const alreadyInGame = players.some(p => p.name.toLowerCase() === sp.name.toLowerCase());
+        return `
+          <div ${!alreadyInGame ? `onclick="addSavedPlayer('${sp.name.replace(/'/g, "\\'")}', '${sp.color.id}')"` : ''} 
+               class="px-3 py-1.5 rounded-xl bg-slate-900 border ${alreadyInGame ? 'border-slate-800 opacity-50 cursor-default' : 'border-slate-700 hover:border-qblue cursor-pointer transition'} text-xs text-slate-300 flex items-center gap-2 group">
+            <span class="w-2.5 h-2.5 rounded-full" style="background-color: ${sp.color.hex}"></span>
+            <span class="font-medium text-white">${sp.name}</span>
+            ${alreadyInGame ? '<span class="text-[10px] text-emerald-400 font-bold ml-1">✓</span>' : '<span class="text-[10px] text-qblue group-hover:scale-125 transition ml-1"><i class="fas fa-plus"></i></span>'}
+            <button type="button" onclick="event.stopPropagation(); removeSavedPlayerPreset('${sp.name.replace(/'/g, "\\'")}')" class="hover:text-rose-400 text-slate-500 ml-1 border-l border-slate-700/80 pl-1.5" title="Supprimer des favoris"><i class="fas fa-xmark text-[11px]"></i></button>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function removeSavedPlayerPreset(name) {
+      let saved = getStoredPlayers();
+      saved = saved.filter(sp => sp.name.toLowerCase() !== name.toLowerCase());
+      localStorage.setItem('qwirkle_saved_players', JSON.stringify(saved));
+      loadSavedPlayersPresets();
+      playTone(300, 'sine', 0.08);
+    }
+
+    function addSavedPlayer(name, colorId) {
+      const colorObj = COLOR_PALETTE.find(c => c.id === colorId) || selectedColor;
+      addPlayerWithName(name, colorObj);
+      playTone(450, 'sine', 0.08);
+    }
+
+    function renderColorPicker() {
+      document.getElementById('colorPicker').innerHTML = COLOR_PALETTE.map((c, idx) => `
+        <button type="button" onclick="selectColor(${idx})" 
+          class="w-7 h-7 rounded-lg flex items-center justify-center transition ${selectedColor.id === c.id ? 'ring-2 ring-white scale-110' : 'opacity-60 hover:opacity-100'}"
+          style="background-color: ${c.hex}"></button>
+      `).join('');
+    }
+
+    function selectColor(index) {
+      selectedColor = COLOR_PALETTE[index];
+      renderColorPicker();
+    }
+
+    function addPlayerWithName(name, colorObj) {
+      if (!name.trim()) return;
+      const cleanName = name.trim();
+      if (players.some(p => p.name.toLowerCase() === cleanName.toLowerCase())) return;
+      
+      const col = colorObj || selectedColor;
+      players.push({
+        id: Date.now() + Math.random(),
+        name: cleanName,
+        color: col,
+        score: 0,
+        qwirkleCount: 0
+      });
+      savePlayerPreset(cleanName, col);
+      updateSetupPlayersList();
+      const nextColorIndex = (COLOR_PALETTE.findIndex(c => c.id === selectedColor.id) + 1) % COLOR_PALETTE.length;
+      selectedColor = COLOR_PALETTE[nextColorIndex];
+      renderColorPicker();
+    }
+
+    function addPlayer() {
+      const input = document.getElementById('playerNameInput');
+      addPlayerWithName(input.value, selectedColor);
+      input.value = '';
+      playTone(440, 'sine', 0.1);
+    }
+
+    function removePlayer(index) {
+      players.splice(index, 1);
+      updateSetupPlayersList();
+      loadSavedPlayersPresets();
+      playTone(300, 'sine', 0.1);
+    }
+
+    function shufflePlayers() {
+      for (let i = players.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [players[i], players[j]] = [players[j], players[i]];
+      }
+      updateSetupPlayersList();
+      playTone(520, 'triangle', 0.15);
+    }
+
+    function updateSetupPlayersList() {
+      const count = document.getElementById('playerCount');
+      const btnStart = document.getElementById('btnStartGame');
+      count.textContent = players.length;
+      btnStart.disabled = players.length < 2;
+      btnStart.classList.toggle('opacity-50', players.length < 2);
+      btnStart.classList.toggle('cursor-not-allowed', players.length < 2);
+
+      document.getElementById('setupPlayersList').innerHTML = players.map((p, idx) => `
+        <div class="flex items-center justify-between p-3 rounded-xl bg-slate-900/60 border border-slate-800">
+          <div class="flex items-center space-x-3">
+            <span class="text-xs font-bold text-slate-500 w-4">${idx + 1}.</span>
+            <div class="w-6 h-6 rounded-md flex items-center justify-center text-white text-xs" style="background-color: ${p.color.hex}">
+              <i class="fas ${p.color.icon}"></i>
+            </div>
+            <span class="font-semibold text-sm text-white">${p.name}</span>
+          </div>
+          <div class="flex items-center space-x-1">
+            <button onclick="movePlayer(${idx}, -1)" ${idx === 0 ? 'disabled' : ''} class="p-1.5 rounded-lg text-slate-400 hover:text-white hover:bg-white/10 disabled:opacity-20 disabled:cursor-not-allowed transition" title="Monter">
+              <i class="fas fa-arrow-up text-xs"></i>
+            </button>
+            <button onclick="movePlayer(${idx}, 1)" ${idx === players.length - 1 ? 'disabled' : ''} class="p-1.5 rounded-lg text-slate-400 hover:text-white hover:bg-white/10 disabled:opacity-20 disabled:cursor-not-allowed transition" title="Descendre">
+              <i class="fas fa-arrow-down text-xs"></i>
+            </button>
+            <button onclick="removePlayer(${idx})" class="p-1.5 rounded-lg text-slate-500 hover:text-rose-400 hover:bg-rose-500/10 transition ml-2" title="Supprimer">
+              <i class="fas fa-trash-can text-xs"></i>
+            </button>
+          </div>
+        </div>
+      `).join('');
+      loadSavedPlayersPresets();
+    }
+
+    function movePlayer(index, direction) {
+      const newIndex = index + direction;
+      if (newIndex < 0 || newIndex >= players.length) return;
+      const temp = players[index];
+      players[index] = players[newIndex];
+      players[newIndex] = temp;
+      updateSetupPlayersList();
+      playTone(400, 'sine', 0.08);
+    }
+
+    function startGame() {
+      if (players.length < 2) return;
+      activePlayerIndex = 0;
+      history = [];
+      document.getElementById('setupScreen').classList.add('hidden');
+      document.getElementById('gameScreen').classList.remove('hidden');
+      document.getElementById('btnNewGame').classList.remove('hidden');
+      resetTurnCalculator();
+      updateGameUI();
+      playTone(600, 'sine', 0.2);
+    }
+
+    function resetTurnCalculator() {
+      baseTurnPoints = 0;
+      isQwirkleBonusActive = false;
+      document.getElementById('scoreRange').value = 0;
+      document.getElementById('customScoreInput').value = 0;
+      updateBasePointsUI();
+      updateQwirkleToggleUI();
+    }
+
+    function setBasePoints(val) {
+      baseTurnPoints = parseInt(val, 10);
+      document.getElementById('scoreRange').value = baseTurnPoints;
+      document.getElementById('customScoreInput').value = baseTurnPoints;
+      updateBasePointsUI();
+      playTone(350 + baseTurnPoints * 30, 'sine', 0.08);
+    }
+
+    function updateBaseFromSlider(val) {
+      baseTurnPoints = parseInt(val, 10);
+      document.getElementById('customScoreInput').value = baseTurnPoints;
+      updateBasePointsUI();
+    }
+
+    function updateBaseFromInput(val) {
+      baseTurnPoints = Math.max(0, parseInt(val, 10) || 0);
+      document.getElementById('scoreRange').value = Math.min(40, baseTurnPoints);
+      updateBasePointsUI();
+    }
+
+    function updateBasePointsUI() {
+      document.querySelectorAll('.tile-btn').forEach(btn => {
+        const btnVal = parseInt(btn.getAttribute('data-val'), 10);
+        btn.classList.toggle('bg-qblue', btnVal === baseTurnPoints);
+        btn.classList.toggle('text-white', btnVal === baseTurnPoints);
+        btn.classList.toggle('shadow-md', btnVal === baseTurnPoints);
+        btn.classList.toggle('glass-card', btnVal !== baseTurnPoints);
+      });
+      
+      if (baseTurnPoints < 12 && isQwirkleBonusActive) {
+        isQwirkleBonusActive = false;
+      }
+      
+      updateQwirkleToggleUI();
+      calculateTurnTotal();
+    }
+
+    function toggleQwirkleBonus() {
+      if (baseTurnPoints < 12) {
+        playTone(200, 'sawtooth', 0.15);
+        return;
+      }
+      isQwirkleBonusActive = !isQwirkleBonusActive;
+      updateQwirkleToggleUI();
+      if (isQwirkleBonusActive) playQwirkleSound();
+      else playTone(300, 'sine', 0.1);
+    }
+
+    function updateQwirkleToggleUI() {
+      const container = document.getElementById('qwirkleToggle');
+      const check = document.getElementById('qwirkleCheck');
+      const iconBox = document.getElementById('qwirkleIconBox');
+      const title = document.getElementById('qwirkleTitle');
+      const subtitle = document.getElementById('qwirkleSubtitle');
+
+      const isValid = baseTurnPoints >= 12;
+
+      if (!isValid) {
+        container.style.opacity = '0.6';
+        container.style.cursor = 'not-allowed';
+        container.className = "cursor-not-allowed p-4 rounded-2xl glass-card border border-slate-700 transition flex items-center justify-between";
+        iconBox.className = "w-10 h-10 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-slate-500 transition";
+        title.className = "font-bold text-sm text-slate-500";
+        subtitle.textContent = "Nécessite un score total minimum de 12 pts";
+        check.className = "w-7 h-7 rounded-full border-2 border-slate-700 flex items-center justify-center text-transparent transition";
+      } else {
+        container.style.opacity = '1';
+        container.style.cursor = 'pointer';
+        title.className = "font-bold text-sm text-white";
+        subtitle.textContent = "Marquer ce tour comme contenant un Qwirkle";
+        
+        if (isQwirkleBonusActive) {
+          container.className = "cursor-pointer p-4 rounded-2xl glass-card border border-qpurple bg-qpurple/20 transition flex items-center justify-between";
+          iconBox.className = "w-10 h-10 rounded-xl bg-qpurple/30 border border-qpurple/50 flex items-center justify-center text-qpurple transition";
+          check.className = "w-7 h-7 rounded-full border-2 border-qpurple bg-qpurple text-white flex items-center justify-center transition";
+        } else {
+          container.className = "cursor-pointer p-4 rounded-2xl glass-card border border-slate-700 transition flex items-center justify-between hover:border-slate-500";
+          iconBox.className = "w-10 h-10 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-qpurple transition";
+          check.className = "w-7 h-7 rounded-full border-2 border-slate-600 flex items-center justify-center text-transparent transition";
+        }
+      }
+      calculateTurnTotal();
+    }
+
+    function calculateTurnTotal() {
+      const total = baseTurnPoints;
+      document.getElementById('turnTotalPreview').textContent = total;
+    }
+
+    function submitTurn() {
+      const totalTurnPoints = baseTurnPoints;
+      const activePlayer = players[activePlayerIndex];
+
+      history.push({
+        playerIndex: activePlayerIndex,
+        playerName: activePlayer.name,
+        playerColor: activePlayer.color.hex,
+        points: totalTurnPoints,
+        isQwirkle: isQwirkleBonusActive,
+        round: Math.floor(history.length / players.length) + 1
+      });
+
+      activePlayer.score += totalTurnPoints;
+      if (isQwirkleBonusActive) activePlayer.qwirkleCount += 1;
+
+      activePlayerIndex = (activePlayerIndex + 1) % players.length;
+      resetTurnCalculator();
+      updateGameUI();
+      playTone(520, 'triangle', 0.12);
+    }
+
+    function updateGameUI() {
+      if (players.length === 0) return;
+      const activePlayer = players[activePlayerIndex];
+
+      const badge = document.getElementById('activePlayerBadge');
+      badge.style.backgroundColor = activePlayer.color.hex;
+      badge.innerHTML = `<i class="fas ${activePlayer.color.icon}"></i>`;
+
+      document.getElementById('activePlayerName').textContent = activePlayer.name;
+      document.getElementById('activePlayerCurrentScore').textContent = `${activePlayer.score} pts`;
+      document.getElementById('turnCounter').textContent = `Tour ${Math.floor(history.length / players.length) + 1}`;
+
+      const btnSortLabel = document.getElementById('sortLabel');
+      btnSortLabel.textContent = leaderboardSortMode === 'score' ? 'Podium' : 'Ordre Table';
+      document.getElementById('leaderboardTitle').innerHTML = leaderboardSortMode === 'score' 
+        ? `<i class="fas fa-trophy text-qyellow"></i> Classement` 
+        : `<i class="fas fa-users-line text-qblue"></i> Ordre de la Table`;
+
+      let displayPlayers = players.map((p, originalIndex) => ({
+        ...p,
+        originalIndex,
+        rank: [...players].sort((a, b) => b.score - a.score).findIndex(sp => sp.id === p.id) + 1
+      }));
+
+      if (leaderboardSortMode === 'score') {
+        displayPlayers.sort((a, b) => b.score - a.score);
+      }
+
+      document.getElementById('leaderboardList').innerHTML = displayPlayers.map((p) => {
+        const isActive = p.id === activePlayer.id;
+        const displayLabel = leaderboardSortMode === 'score' ? `#${p.rank}` : `${p.originalIndex + 1}.`;
+        return `
+          <div class="flex items-center justify-between p-3 rounded-2xl ${isActive ? 'bg-qblue/15 border border-qblue/40 shadow-sm' : 'bg-slate-900/40 border border-slate-800/80'} transition">
+            <div class="flex items-center space-x-3 cursor-pointer hover:opacity-80" onclick="openPlayerHistory('${p.name.replace(/'/g, "\\'")}')" title="Voir l'historique de ${p.name}">
+              <span class="text-xs font-bold ${p.rank === 1 ? 'text-qyellow' : 'text-slate-500'} w-6">${displayLabel}</span>
+              <div class="w-7 h-7 rounded-lg flex items-center justify-center text-white text-xs font-bold" style="background-color: ${p.color.hex}">
+                <i class="fas ${p.color.icon}"></i>
+              </div>
+              <div>
+                <span class="font-bold text-sm text-white flex items-center gap-1.5 underline decoration-slate-600 underline-offset-4">
+                  ${p.name} ${isActive ? '<span class="w-2 h-2 rounded-full bg-qblue animate-pulse"></span>' : ''}
+                </span>
+                ${p.qwirkleCount > 0 ? `<span class="text-[10px] text-qpurple font-semibold">${p.qwirkleCount} Qwirkle${p.qwirkleCount > 1 ? 's' : ''}</span>` : ''}
+              </div>
+            </div>
+            <div class="text-right">
+              <span class="font-display font-extrabold text-base text-white">${p.score}</span>
+              <span class="text-xs text-slate-400 font-medium"> pts</span>
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      document.getElementById('btnUndo').disabled = history.length === 0;
+      const historyLogs = document.getElementById('historyLogs');
+
+      if (history.length === 0) {
+        historyLogs.innerHTML = `<div class="text-center py-6 text-slate-500 text-xs">Aucun coup joué.</div>`;
+      } else {
+        historyLogs.innerHTML = [...history].reverse().map(h => `
+          <div class="flex items-center justify-between p-2.5 rounded-xl bg-slate-900/50 border border-slate-800 text-xs">
+            <div class="flex items-center space-x-2">
+              <span class="w-2.5 h-2.5 rounded-full" style="background-color: ${h.playerColor}"></span>
+              <span class="font-bold text-slate-200">${h.playerName}</span>
+              ${h.isQwirkle ? '<span class="px-1.5 py-0.5 rounded bg-qpurple/20 text-qpurple font-extrabold text-[10px]">QWIRKLE</span>' : ''}
+              ${h.isEndBonus ? '<span class="px-1.5 py-0.5 rounded bg-amber-500/20 text-amber-400 font-extrabold text-[10px]">BONUS +6</span>' : ''}
+            </div>
+            <span class="font-bold text-qyellow">${h.points} pts</span>
+          </div>
+        `).join('');
+      }
+    }
+
+    function undoLastTurn() {
+      if (history.length === 0) return;
+      const last = history.pop();
+      const player = players[last.playerIndex];
+
+      player.score -= last.points;
+      if (last.isQwirkle && player.qwirkleCount > 0) {
+        player.qwirkleCount -= 1;
+      }
+
+      activePlayerIndex = last.playerIndex;
+      resetTurnCalculator();
+      updateGameUI();
+      playTone(350, 'triangle', 0.15);
+    }
+
+    let selectedEndGameBonusPlayerIndex = -1;
+
+    function triggerEndGamePrompt() {
+      const container = document.getElementById('endGamePlayerSelector');
+      selectedEndGameBonusPlayerIndex = -1;
+      container.innerHTML = `
+        <button type="button" onclick="selectEndGameBonusPlayer(-1)" id="endBonusBtn-none" class="w-full p-3 rounded-xl bg-slate-900 border border-qblue text-left flex items-center justify-between text-xs font-semibold text-white">
+          <span>Aucun / Sac vidé sans bonus</span>
+          <i class="fas fa-check text-qblue" id="endBonusCheck-none"></i>
+        </button>
+      ` + players.map((p, idx) => `
+        <button type="button" onclick="selectEndGameBonusPlayer(${idx})" id="endBonusBtn-${idx}" class="w-full p-3 rounded-xl bg-slate-900/60 border border-slate-800 text-left flex items-center justify-between text-xs font-semibold text-white hover:border-slate-700">
+          <div class="flex items-center space-x-2.5">
+            <span class="w-3 h-3 rounded-full" style="background-color: ${p.color.hex}"></span>
+            <span>${p.name} (+6 pts)</span>
+          </div>
+          <i class="fas fa-check text-transparent" id="endBonusCheck-${idx}"></i>
+        </button>
+      `).join('');
+      document.getElementById('endGameModal').classList.remove('hidden');
+    }
+
+    function selectEndGameBonusPlayer(index) {
+      selectedEndGameBonusPlayerIndex = index;
+      document.querySelectorAll('#endGamePlayerSelector button').forEach(b => {
+        b.classList.remove('border-qblue');
+        b.classList.add('border-slate-800');
+      });
+      document.querySelectorAll('#endGamePlayerSelector i').forEach(i => {
+        i.classList.remove('text-qblue');
+        i.classList.add('text-transparent');
+      });
+      const key = index === -1 ? 'none' : index;
+      const btn = document.getElementById(`endBonusBtn-${key}`);
+      const chk = document.getElementById(`endBonusCheck-${key}`);
+      if (btn) { btn.classList.add('border-qblue'); btn.classList.remove('border-slate-800'); }
+      if (chk) { chk.classList.add('text-qblue'); chk.classList.remove('text-transparent'); }
+      playTone(400, 'sine', 0.08);
+    }
+
+    function closeEndGameModal() {
+      document.getElementById('endGameModal').classList.add('hidden');
+    }
+
+    function confirmEndGameWithBonus() {
+      if (selectedEndGameBonusPlayerIndex >= 0 && selectedEndGameBonusPlayerIndex < players.length) {
+        const bonusPlayer = players[selectedEndGameBonusPlayerIndex];
+        bonusPlayer.score += 6;
+        history.push({
+          playerIndex: selectedEndGameBonusPlayerIndex,
+          playerName: bonusPlayer.name,
+          playerColor: bonusPlayer.color.hex,
+          points: 6,
+          isQwirkle: false,
+          isEndBonus: true,
+          round: 'Fin'
+        });
+      }
+      closeEndGameModal();
+      showWinnerScreen();
+    }
+
+    function showWinnerScreen() {
+      document.getElementById('setupScreen').classList.add('hidden');
+      document.getElementById('gameScreen').classList.add('hidden');
+      document.getElementById('winnerScreen').classList.remove('hidden');
+
+      const sorted = [...players].sort((a, b) => {
+        if (b.score !== a.score) return b.score - a.score;
+        return b.qwirkleCount - a.qwirkleCount;
+      });
+
+      const bestScore = sorted[0].score;
+      const bestQwirkles = sorted[0].qwirkleCount;
+      const topWinners = sorted.filter(p => p.score === bestScore && p.qwirkleCount === bestQwirkles);
+
+      const winnerTextEl = document.getElementById('winnerName');
+      const winnerTitleLabelEl = document.getElementById('winnerTitleLabel');
+
+      if (topWinners.length > 1) {
+        if (winnerTitleLabelEl) winnerTitleLabelEl.textContent = "Les vainqueurs suprêmes sont";
+        winnerTextEl.textContent = topWinners.map(p => p.name).join(', ') + " (Égalité parfaite)";
+        winnerTextEl.style.color = '#FFCC00';
+      } else {
+        if (winnerTitleLabelEl) winnerTitleLabelEl.textContent = "Le vainqueur suprême est";
+        winnerTextEl.textContent = topWinners[0].name;
+        winnerTextEl.style.color = topWinners[0].color.hex;
+      }
+
+      confetti({ particleCount: 120, spread: 70, origin: { y: 0.6 } });
+
+      const podium = document.getElementById('podiumContainer');
+      
+      const groups = [];
+      sorted.forEach(p => {
+        const lastGroup = groups[groups.length - 1];
+        if (lastGroup && lastGroup[0].score === p.score && lastGroup[0].qwirkleCount === p.qwirkleCount) {
+          lastGroup.push(p);
+        } else {
+          groups.push([p]);
+        }
+      });
+
+      const medals = ['🥇', '🥈', '🥉'];
+      const podiumHeights = ['h-36 sm:h-44', 'h-28 sm:h-34', 'h-20 sm:h-26'];
+
+      let podiumHTML = '';
+      groups.forEach((group, groupIdx) => {
+        if (groupIdx >= 3) return;
+        const heightClass = podiumHeights[groupIdx] || 'h-20';
+        const medal = medals[groupIdx] || '🏅';
+
+        podiumHTML += `
+          <div class="flex flex-col items-center flex-1 max-w-[260px] min-w-[140px]">
+            <div class="flex justify-center gap-2 mb-3 flex-wrap w-full">
+              ${group.map(p => `
+                <div class="flex flex-col items-center p-3 rounded-2xl bg-slate-900/95 border border-white/10 shadow-xl flex-1 min-w-[110px] cursor-pointer hover:border-qblue transition" onclick="openPlayerHistory('${p.name.replace(/'/g, "\\'")}')" title="Voir l'historique">
+                  <div class="w-10 h-10 rounded-xl flex items-center justify-center text-white text-lg font-bold mb-1.5 shadow-inner" style="background-color: ${p.color.hex}">
+                    <i class="fas ${p.color.icon}"></i>
+                  </div>
+                  <span class="font-bold text-xs text-white truncate max-w-[120px] underline decoration-slate-600">${p.name}</span>
+                  <span class="font-display font-extrabold text-sm text-qyellow">${p.score} pts</span>
+                  ${p.qwirkleCount > 0 ? `<span class="text-[9px] text-qpurple font-semibold mt-0.5">${p.qwirkleCount} Qwirkle${p.qwirkleCount > 1 ? 's' : ''}</span>` : ''}
+                </div>
+              `).join('')}
+            </div>
+            <div class="${heightClass} w-full rounded-t-2xl glass-panel border border-white/15 flex flex-col justify-between p-3 text-center shadow-2xl bg-gradient-to-t from-slate-900/95 to-slate-800/80">
+              <span class="text-3xl filter drop-shadow-[0_4px_8px_rgba(0,0,0,0.5)]">${medal}</span>
+              <div class="space-y-0.5">
+                <span class="text-[10px] font-extrabold text-slate-400 uppercase tracking-widest block">Position</span>
+                <span class="text-sm font-display font-black text-qyellow">#${groupIdx + 1}</span>
+              </div>
+            </div>
+          </div>
+        `;
+      });
+
+      podium.innerHTML = podiumHTML;
+
+      let maxTurnPoints = 0;
+      let totalQwirkles = 0;
+      history.forEach(h => {
+        if (h.points > maxTurnPoints) maxTurnPoints = h.points;
+        if (h.isQwirkle) totalQwirkles++;
+      });
+      const avgTurn = history.length ? (history.reduce((s, h) => s + h.points, 0) / history.length).toFixed(1) : 0;
+
+      document.getElementById('statBestTurn').textContent = `${maxTurnPoints} pts`;
+      document.getElementById('statTotalQwirkles').textContent = `${totalQwirkles} Qwirkles`;
+      document.getElementById('statAvgTurn').textContent = `${avgTurn} pts`;
+
+      saveGameArchive(topWinners[0]);
+      playQwirkleSound();
+    }
+
+    function openPlayerHistory(playerName) {
+      const modalTitle = document.getElementById('playerHistoryModalTitle');
+      const container = document.getElementById('playerHistoryList');
+      modalTitle.innerHTML = `<i class="fas fa-user text-qblue"></i> Historique de <span class="text-qyellow">${playerName}</span>`;
+      
+      try {
+        const archives = JSON.parse(localStorage.getItem('qwirkle_archives')) || [];
+        const playerGames = archives.filter(a => a.players.some(pl => pl.name.toLowerCase() === playerName.toLowerCase()));
+        
+        if (playerGames.length === 0) {
+          container.innerHTML = `<div class="text-center py-6 text-slate-500 text-xs">Aucune partie enregistrée pour ce joueur.</div>`;
+        } else {
+          container.innerHTML = playerGames.map(a => {
+            const pInfo = a.players.find(pl => pl.name.toLowerCase() === playerName.toLowerCase());
+            const isWinner = a.winner.toLowerCase() === playerName.toLowerCase();
+            return `
+              <div class="p-3 rounded-2xl bg-slate-900/60 border border-slate-800 space-y-1 text-xs">
+                <div class="flex justify-between items-center">
+                  <span class="text-slate-400"><i class="fas fa-calendar-days mr-1"></i> ${a.date}</span>
+                  ${isWinner ? '<span class="px-2 py-0.5 rounded-full bg-qyellow/20 text-qyellow font-bold text-[10px]"><i class="fas fa-crown mr-1"></i> Victoire</span>' : '<span class="text-slate-500">Partie jouée</span>'}
+                </div>
+                <div class="flex justify-between items-center pt-1 font-semibold text-white">
+                  <span>Score final : <b class="text-qblue">${pInfo ? pInfo.score : 0} pts</b></span>
+                  <span class="text-slate-400">(${a.players.length} joueurs)</span>
+                </div>
+              </div>
+            `;
+          }).join('');
+        }
+      } catch(e) {
+        container.innerHTML = `<div class="text-center py-6 text-slate-500 text-xs">Erreur de lecture.</div>`;
+      }
+      document.getElementById('playerHistoryModal').classList.remove('hidden');
+    }
+
+    function closePlayerHistoryModal() {
+      document.getElementById('playerHistoryModal').classList.add('hidden');
+    }
+
+    function saveGameArchive(winner) {
+      try {
+        let archives = JSON.parse(localStorage.getItem('qwirkle_archives')) || [];
+        archives.unshift({
+          date: new Date().toLocaleDateString('fr-FR', { day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' }),
+          winner: winner.name,
+          winnerScore: winner.score,
+          playersCount: players.length,
+          players: players.map(p => ({ name: p.name, score: p.score, color: p.color.hex }))
+        });
+        if (archives.length > 20) archives = archives.slice(0, 20);
+        localStorage.setItem('qwirkle_archives', JSON.stringify(archives));
+      } catch(e) {}
+    }
+
+    function openHistoryModal() {
+      const container = document.getElementById('archivedGamesList');
+      try {
+        const archives = JSON.parse(localStorage.getItem('qwirkle_archives')) || [];
+        if (archives.length === 0) {
+          container.innerHTML = `<div class="text-center py-6 text-slate-500 text-xs">Aucune archive enregistrée.</div>`;
+        } else {
+          container.innerHTML = archives.map(a => `
+            <div class="p-3 rounded-2xl bg-slate-900/60 border border-slate-800 space-y-2 text-xs">
+              <div class="flex justify-between items-center text-slate-400">
+                <span><i class="fas fa-calendar-days mr-1"></i> ${a.date}</span>
+                <span class="text-qyellow font-bold"><i class="fas fa-crown mr-1"></i> ${a.winner} (${a.winnerScore} pts)</span>
+              </div>
+              <div class="flex flex-wrap gap-1.5 pt-1">
+                ${a.players.map(pl => `<span class="px-2 py-0.5 rounded-lg bg-slate-800 text-slate-300">${pl.name}: <b>${pl.score}</b></span>`).join('')}
+              </div>
+            </div>
+          `).join('');
+        }
+      } catch(e) {
+        container.innerHTML = `<div class="text-center py-6 text-slate-500 text-xs">Erreur de lecture.</div>`;
+      }
+      document.getElementById('historyModal').classList.remove('hidden');
+    }
+
+    function closeHistoryModal() {
+      document.getElementById('historyModal').classList.add('hidden');
+    }
+
+    function clearArchives() {
+      localStorage.removeItem('qwirkle_archives');
+      openHistoryModal();
+    }
+
+    function restartWithSamePlayers() {
+      players.forEach(p => { p.score = 0; p.qwirkleCount = 0; });
+      activePlayerIndex = 0;
+      history = [];
+      document.getElementById('winnerScreen').classList.add('hidden');
+      document.getElementById('gameScreen').classList.remove('hidden');
+      resetTurnCalculator();
+      updateGameUI();
+      playTone(600, 'sine', 0.2);
+    }
+
+    function resetSetup() {
+      players = [];
+      document.getElementById('winnerScreen').classList.add('hidden');
+      document.getElementById('gameScreen').classList.add('hidden');
+      document.getElementById('btnNewGame').classList.add('hidden');
+      document.getElementById('setupScreen').classList.remove('hidden');
+      addPlayerWithName("Alice", COLOR_PALETTE[0]);
+      addPlayerWithName("Bob", COLOR_PALETTE[4]);
+    }
+
+    function openResetModal() {
+      document.getElementById('resetConfirmModal').classList.remove('hidden');
+      playTone(350, 'sine', 0.1);
+    }
+
+    function closeResetModal() {
+      document.getElementById('resetConfirmModal').classList.add('hidden');
+    }
+
+    function confirmResetAction() {
+      closeResetModal();
+      resetSetup();
+      playTone(300, 'triangle', 0.15);
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (['INPUT', 'TEXTAREA'].includes(document.activeElement.tagName)) return;
+      if (!document.getElementById('gameScreen').classList.contains('hidden')) {
+        if (e.key === 'Enter') { e.preventDefault(); submitTurn(); }
+        else if (e.key === 'z' || e.key === 'Z') { undoLastTurn(); }
+      }
+    });
+  </script>
+</body>
+</html>
